@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>baitap2</title>
+    <script src = "script2.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <h2>Khảo sát đánh giá giảng viên</h2>
+    <form id = "userForm">
+        <label for="userSubject" >Tên môn học:</label>
+        <input type = "text" id = "userSubject" placeholder = "Nhập tên môn học" style = "background-color: rgb(221, 232, 246)">
+        <br><br>
+        <label for="userName">Tên giảng viên:</label>
+        <input type = "text" id = "userName" placeholder = "Nhập tên giảng viên" style = "background-color: rgb(221, 232, 246)">
+        <br><br>
+        <label for="nameStudent">Họ tên sinh viên:</label>
+        <input type = "text" id = "nameStudent" placeholder = "Nhập tên sinh viên" style = "background-color: rgb(221, 232, 246)">
+        <br><br>
+        <label>Ngày giờ gửi form:</label>
+        <span id="submitTime"></span><br><br>
+    </form>
+
+
+        <table border = "1" id ="userTable">
+            <thead>
+                <tr>
+                    <th>Tiêu chí</th>
+                    <th>1 (Rất Kém)</th>
+                    <th>2 (Kém)</th>
+                    <th>3 (Trung Bình)</th>
+                    <th>4 (Tốt)</th>
+                    <th>5 (Rất Tốt)</th>
+                </tr>
+
+                <tr style = "text-align : left">
+                    <th>Khả năng truyền đạt</th>
+                    <th><input type="radio" name="1"></th>
+                    <th><input type="radio" name="1"></th>
+                    <th><input type="radio" name="1"></th>
+                    <th><input type="radio" name="1"></th>
+                    <th><input type="radio" name="1"></th>
+                </tr>
+
+                </tr>
+                <tr style = "text-align : left">
+                    <th>Thái độ giảng viên</th>
+                    <th><input type="radio" name="2"></th>
+                    <th><input type="radio" name="2"></th>
+                    <th><input type="radio" name="2"></th>
+                    <th><input type="radio" name="2"></th>
+                    <th><input type="radio" name="2"></th>
+                </tr>
+
+                </tr>
+                <tr style = "text-align : left">
+                    <th>Sự tương tác với sinh viên</th>
+                    <th><input type="radio" name="3"></th>
+                    <th><input type="radio" name="3"></th>
+                    <th><input type="radio" name="3"></th>
+                    <th><input type="radio" name="3"></th>
+                    <th><input type="radio" name="3"></th>
+                </tr>
+
+                </tr>
+                <tr style = "text-align : left">
+                    <th>Kiến thức chuyên môn</th>
+                    <th><input type="radio" name="4"></th>    
+                    <th><input type="radio" name="4"></th>
+                    <th><input type="radio" name="4"></th>
+                    <th><input type="radio" name="4"></th>
+                    <th><input type="radio" name="4"></th>
+                </tr>
+
+                </tr>
+                <tr style = "text-align : left">
+                    <th>Tổ chức bài giảng</th>
+                    <th><input type="radio" name="5"></th>
+                    <th><input type="radio" name="5"></th>
+                    <th><input type="radio" name="5"></th>
+                    <th><input type="radio" name="5"></th>
+                    <th><input type="radio" name="5"></th>
+                </tr>
+
+                </tr>
+                <tr style = "text-align : left">
+                    <th>Khả năng giải đáp thắc mắc</th>
+                    <th><input type="radio" name="6"></th>
+                    <th><input type="radio" name="6"></th>
+                    <th><input type="radio" name="6"></th>
+                    <th><input type="radio" name="6"></th>
+                    <th><input type="radio" name="6"></th>
+                </tr>
+
+                </tr>
+                <tr style = "text-align : left">
+                    <th>Sự nhiệt tình</th>
+                    <th><input type="radio" name="7"></th>
+                    <th><input type="radio" name="7"></th>
+                    <th><input type="radio" name="7"></th>
+                    <th><input type="radio" name="7"></th>
+                    <th><input type="radio" name="7"></th>
+                </tr>
+
+                </tr>
+                <tr style = "text-align : left">
+                    <th>Thời gian giảng dạy phù hợp</th>
+                    <th><input type="radio" name="8"></th>
+                    <th><input type="radio" name="8"></th>
+                    <th><input type="radio" name="8"></th>
+                    <th><input type="radio" name="8"></th>
+                    <th><input type="radio" name="8"></th>
+                </tr>
+                
+                </tr>
+                <tr style = "text-align : left">
+                    <th>Thái độ đối với câu hỏi của sinh viên</th>
+                    <th><input type="radio" name="9"></th>
+                    <th><input type="radio" name="9"></th>
+                    <th><input type="radio" name="9"></th>
+                    <th><input type="radio" name="9"></th>
+                    <th><input type="radio" name="9"></th>
+                </tr>
+                
+                </tr>
+                <tr style = "text-align : left">
+                    <th>Ứng dụng công nghệ trong giảng dạy</th>
+                    <th><input type="radio" name="10"></th>
+                    <th><input type="radio" name="10"></th>
+                    <th><input type="radio" name="10"></th>
+                   <th><input type="radio" name="10"></th>
+                    <th><input type="radio" name="10"></th>
+                </tr>
+
+                </tr>
+                <tr style = "text-align : left">
+                    <th>Khả năng khuyến khích tư duy sáng tạo</th>
+                    <th><input type="radio" name ="11"></th>
+                    <th><input type="radio" name ="11"></th>
+                    <th><input type="radio" name ="11"></th>
+                    <th><input type="radio" name ="11"></th>
+                    <th><input type="radio" name ="11"></th>
+                </tr>
+            </thead>
+        </table>
+    
+        <h3>Trung bình điểm của giảng viên:</h3>
+
+        <button type = "botton" id = "saveBotton">Gửi khảo sát</button>
+
+        <h2>Dữ liệu khảo sát dưới dạng JSON</h2>
+        <br>
+        <button onclick="location.href='Baitap1.html'" style = "background-color: rgb(221, 232, 246)">Quay lại trang</button> 
+
+</body>
+</html>

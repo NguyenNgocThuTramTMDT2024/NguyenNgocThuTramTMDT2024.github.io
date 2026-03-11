@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baitap1</title>
+    <script src = "script.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1>Nhập Thông Tin Người Dùng</h1>
+     <form id="userForm">
+    <label for="nameInput">Tên của bạn:</label>
+    <input type="text" id="nameInput" placeholder="Nhập tên của bạn"><br><br>
+
+    <label for="addressInput">Địa chỉ của bạn:</label>
+    <input type="text" id="addressInput" placeholder="Nhập địa chỉ của bạn"><br><br>
+
+    <button type="button" id="saveButton">Lưu Thông Tin</button>
+    </form>
+
+
+    <h1>Thông tin người dùng đã nhập</h1>
+    <table border ="1" id = "userTable">
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Tên Người Dùng</th>
+                <th>Địa Chỉ</th>
+                <th>Dữ Liệu JSON</th>
+                <th>Xoá</th>
+            </tr>
+        </thead>
+        <tbody>
+      <!-- Hàng sẽ được thêm vào đây -->
+        </tbody>
+    </table>
+
+    <h2>Xoá Người Dùng</h2>
+    <label for="deleteIndex">Nhập STT cần xoá:</label>
+    <input type="number" id ="deleteIndex" placeholder ="Nhập STT">
+    <br><br>
+    <button type="botton" id = "deleteButton">Xoá Người Dùng </button>
+    
+    <br><br>
+    <button onclick="location.href='index.html'" style = "background-color: rgb(221, 232, 246)">Quay lại trang</button> 
+    <button onclick="location.href='baitap2.html'" style = "background-color: rgb(221, 232, 246)">Bài tập 2</button>
+</body>
+</html>
